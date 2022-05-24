@@ -1,0 +1,18 @@
+.tituloBanner{
+    background-color: blueviolet;
+    text-align: center;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+     
+.imagem{
+    width: 90px;
+    margin-right: 1%;
+}
+
+.title{
+    text-align: left;
+}

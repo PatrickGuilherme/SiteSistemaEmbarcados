@@ -1,0 +1,22 @@
+.intropage{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.imagemExe{
+    width: 200px;
+}
+
+.texto{
+    width: 50%;
+    background-color: blue;
+    text-align: justify;
+    padding: 2%;
+}
+
+.imagemIntro{
+    width: 50%;background-color: brown;
+    padding: 2%;
+    text-align: center;
+}
