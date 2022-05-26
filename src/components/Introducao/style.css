@@ -9,14 +9,39 @@
 }
 
 .texto{
-    width: 50%;
+    width: 70%;
     background-color: blue;
     text-align: justify;
     padding: 2%;
 }
 
 .imagemIntro{
-    width: 50%;background-color: brown;
+    width: 30%;
+    background-color: brown;
     padding: 2%;
     text-align: center;
+}
+
+
+.linkCaract{
+    cursor: pointer;
+}
+
+.listaCaract{
+    list-style: none;
+    padding: 4%;
+}
+.listaCaract li{
+    padding-bottom: 3%;
+    text-align: justify;
+}
+
+.icone{
+    margin-right: 2%;
+}
+
+.imgModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
