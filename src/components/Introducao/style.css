@@ -10,14 +10,12 @@
 
 .texto{
     width: 70%;
-    background-color: blue;
     text-align: justify;
     padding: 2%;
 }
 
 .imagemIntro{
     width: 30%;
-    background-color: brown;
     padding: 2%;
     text-align: center;
 }

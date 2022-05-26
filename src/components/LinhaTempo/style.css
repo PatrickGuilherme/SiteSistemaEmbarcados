@@ -1,6 +1,5 @@
 .linha{
     width: 100%;
-    background-color: rgb(165, 42, 138);
     display: flex;
     flex-direction: row;
 }
