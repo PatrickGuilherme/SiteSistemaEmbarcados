@@ -33,14 +33,14 @@ function LinhaTempo() {
 
     const Set1961 = () => {
         setTitulo("Minuteman míssil balístico intercontinental - USA");
-        setDescricao("O primeiro sistema de computação embarcada data de 1961 desenvolvido para o Minuteman míssil balístico intercontinental da Força Aérea os EUA. Na sua construção foram utilizados transistores discretos e portas lógicas.");
+        setDescricao("O primeiro sistema de computação embarcada data de 1961 desenvolvido para o Minuteman míssil balístico intercontinental da Força Aérea dos EUA. Na sua construção foram utilizados transistores discretos e portas lógicas.");
         setImgUrl(Imagem1961);
         setOpen(true);
     }
 
     const Set1970 = () => {
         setTitulo("Air Data Computer Central");
-        setDescricao("Foi primeiro sistema embarcado baseado em microprocessador, incorporado ao avião F-14 Tomcat Lançado em 1970, este sistema embarcado lidou com q electrónica a bordo dos aviões, tratamento de vôo, e cálculo do balanço de configuração de asa do F-14, além de forneceram informações sobre a velocidade do cockpit do ar e altitude");
+        setDescricao("Foi primeiro sistema embarcado baseado em microprocessador, incorporado ao avião F-14 Tomcat Lançado em 1970, este sistema embarcado lidou com q electrónica a bordo dos aviões, tratamento de vôo, e cálculo do balanço de configuração de asa do F-14, além de fornecerem informações sobre a velocidade do cockpit do ar e altitude");
         setImgUrl(Imagem1970);
         setOpen(true);
     }
@@ -54,7 +54,7 @@ function LinhaTempo() {
 
     const Set1990 = () => {
         setTitulo("1990");
-        setDescricao("Movendo-se em direção a celulares e computadores de mão multiuso. Um aspecto chave que mudou é que os processadores de 32 bits maduras e ferramentas de desenvolvimento mais fáceis de usar, têm aumentado o poder computacional disponível tremendamente , enquanto que muitas das restrições de energia elétrica caíram com modernas de fabricação de CPU");
+        setDescricao("Movendo-se em direção a celulares e computadores de mão multiuso. Um aspecto chave que mudou é que os processadores de 32 bits maduras e ferramentas de desenvolvimento mais fáceis de usar, têm aumentado o poder computacional disponível tremendamente , enquanto que muitas das restrições de energia elétrica caíram com modernas técnicas de fabricação de CPU.");
         setImgUrl(Imagem1990);
         setOpen(true);
     }
