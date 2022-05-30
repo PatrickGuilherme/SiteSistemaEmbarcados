@@ -24,16 +24,12 @@ import Modal from './components/BaseModal';
 import ArchitectureTabs from './components/ArchitectureTabs';
 
 export default function App() {
-  const [showModal, setShowModal] = useState(false);
   const [showFeaturesModal, setShowFeaturesModal] = useState(false);
   function openFeaturesModal() {
     setShowFeaturesModal(true);
   }
   return (
     <>
-      <Modal isOpen={showModal} handleCloseModal={() => setShowModal(false)}>
-        <button>Close Modal</button>
-      </Modal>
       <Modal
         title='Características'
         isOpen={showFeaturesModal}
