@@ -8,11 +8,14 @@ export default function Timeline() {
   const [showYearModal, setShowYearModal] = useState(false);
   const [modalTitle, setModalTitle] = useState('');
   const [modalDescription, setModalDescription] = useState('');
+  const [modalImagem, setModalImagem] = useState('');
+
   function showModal(year) {
     setShowYearModal(true);
     let modalInfo = timelines.find((timeline) => timeline.year === year);
     setModalTitle(modalInfo.title);
     setModalDescription(modalInfo.description);
+    setModalImagem(modalInfo.caminho);
   }
   return (
     <Container>
@@ -21,6 +24,10 @@ export default function Timeline() {
         isOpen={showYearModal}
         handleCloseModal={() => setShowYearModal(false)}
       >
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          <img src={modalImagem} width="30%" />
+        </div>
+        <br/>
         {modalDescription}
       </Modal>
       {timelines.map((timeline) => (

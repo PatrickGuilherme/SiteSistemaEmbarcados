@@ -7,7 +7,7 @@ export const Container = styled.div`
   margin: 6rem 0;
 `
 export const YearBox = styled.div`
-  width: 20%;
+  width: 25%;
   :hover {
     background-color: #eee;
   }

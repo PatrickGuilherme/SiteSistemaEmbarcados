@@ -101,7 +101,7 @@ export const Vref = styled(Button)`
 
 export const PortButtonContainer = styled.div`
   position: absolute;
-  bottom: 25px;
+  bottom: 40px;
   left: 22px;
 `;
 
@@ -161,7 +161,7 @@ export const SFRButton = styled(Button)`
   position: absolute;
   font-size: 0.8rem;
   top: 35px;
-  right: 100px;
+  left: 355px;
   height: 60px;
   width: 60px;
 `;
@@ -170,7 +170,7 @@ export const RAMButton = styled(Button)`
   position: absolute;
   font-size: 0.8rem;
   top: 35px;
-  right: 32px;
+  left: 420px;
   height: 60px;
   width: 60px;
 `;
@@ -179,7 +179,7 @@ export const ProgramMemoryButton = styled(Button)`
   position: absolute;
   font-size: 0.8rem;
   top: 105px;
-  right: 30px;
+  left: 350px;
   height: 120px;
   width: 130px;
 `;
@@ -188,7 +188,7 @@ export const EEPROMButton = styled(Button)`
   position: absolute;
   font-size: 0.8rem;
   top: 235px;
-  right: 30px;
+  left: 350px;
   height: 60px;
   width: 130px;
 `;
@@ -197,15 +197,15 @@ export const ResetButton = styled(Button)`
   position: absolute;
   font-size: 0.8rem;
   bottom: 75px;
-  right: 30px;
+  left: 350px;
   height: 30px;
   width: 130px;
 `;
 export const PowerSupplyButton = styled(Button)`
   position: absolute;
   font-size: 0.7rem;
-  bottom: 26px;
+  bottom: 35px;
   right: 30px;
-  height: 40px;
+  left: 350px;
   width: 130px;
 `;

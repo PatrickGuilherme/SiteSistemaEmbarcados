@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import {
   ADConverter,
   InternalOscillatorButton,
@@ -25,6 +26,8 @@ import {
 } from '../styles';
 
 function ArchitectureButtons() {
+
+
   return (
     <>
       <OscillatorButton>Oscilador 0 - 20MHz</OscillatorButton>
