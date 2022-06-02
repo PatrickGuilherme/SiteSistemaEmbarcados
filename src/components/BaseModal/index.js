@@ -32,7 +32,7 @@ export default function Modal({ title, isOpen, handleCloseModal, children }) {
       appElement={document.getElementById('root')}
     >
       <HeaderModal>
-        <h3 style={{ fontSize: 'bold' }}>{title}</h3>
+        <h3 style={{ fontSize: 30 }}>{title}</h3>
         <CloseButton onCloseModal={handleCloseModal} />
       </HeaderModal>
       {children}

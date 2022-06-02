@@ -28,7 +28,7 @@ export default function Timeline() {
           <img src={modalImagem} width="30%" />
         </div>
         <br/>
-        {modalDescription}
+        <p style={{fontSize: 20}}>&emsp;&emsp;&emsp;{modalDescription}</p>
       </Modal>
       {timelines.map((timeline) => (
         <YearBox
