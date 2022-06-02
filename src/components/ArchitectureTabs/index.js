@@ -23,10 +23,6 @@ function ArchitectureTabs() {
             <strong>Microcontroladores vs microprocessadores</strong>
           </a>
         </div>
-        <div>
-          <p>ddd</p>
-
-        </div>
       </div>    
     </div>
   </Container>;
