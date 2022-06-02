@@ -30,84 +30,105 @@ import {
 function ArchitectureButtons() {
   const [showOpcModal, setShowOpcModal] = useState(false);
   const [modalDescription, setModalDescription] = useState([]);
+  const [modalTitle, setModalTitle] = useState('');
 
   function showModalOpc(opc) {
     setShowOpcModal(true);
-    let modalInfo = componentsBtn.find((componentsBtn) => componentsBtn.opc === opc);
-    setModalDescription([modalInfo.text,modalInfo.text2]);
+    let modalInfo = componentsBtn.find(
+      (componentsBtn) => componentsBtn.opc === opc
+    );
+    setModalDescription([modalInfo.text, modalInfo.text2]);
+    setModalTitle(modalInfo.opc);
   }
 
   return (
     <>
-
       <Modal
-       isOpen={showOpcModal}
-        handleCloseModal={() => setShowOpcModal(false)}>
+        isOpen={showOpcModal}
+        handleCloseModal={() => setShowOpcModal(false)}
+        title={modalTitle}
+        height={'35%'}
+      >
         <div>
-          {modalDescription[0]}
-          <br/>
-          <br/>
-          {modalDescription[1]}
+          &emsp;&emsp;&emsp;{modalDescription[0]}
+          <br />
+          <br />
+          &emsp;&emsp;&emsp;{modalDescription[1]}
         </div>
       </Modal>
 
       <OscillatorButton onClick={showModalOpc.bind(this, 'Oscilador')}>
-      Oscilador 0 - 20MHz</OscillatorButton>
+        Oscilador 0 - 20MHz
+      </OscillatorButton>
       <SFRButton onClick={showModalOpc.bind(this, 'SFR')}>SFR</SFRButton>
 
-      <InternalOscillatorButton onClick={showModalOpc.bind(this, 'Oscilador')}>Oscilador Interno</InternalOscillatorButton>
-      <SPIButton onClick={showModalOpc.bind(this, 'SPII2C')}>SPI I²C</SPIButton>
-      <USARTButton onClick={showModalOpc.bind(this, 'USART')}>USART</USARTButton>
+      <InternalOscillatorButton onClick={showModalOpc.bind(this, 'Oscilador')}>
+        Oscilador Interno
+      </InternalOscillatorButton>
+      <SPIButton onClick={showModalOpc.bind(this, 'SPI I²C')}>
+        SPI I²C
+      </SPIButton>
+      <USARTButton onClick={showModalOpc.bind(this, 'USART')}>
+        USART
+      </USARTButton>
 
-
-      <T0Button onClick={showModalOpc.bind(this, 'T0T1T2')}>
+      <T0Button onClick={showModalOpc.bind(this, 'Temporizadores')}>
         T0
       </T0Button>
-      <T1Button onClick={showModalOpc.bind(this, 'T0T1T2')}>
+      <T1Button onClick={showModalOpc.bind(this, 'Temporizadores')}>
         T1
       </T1Button>
-      <T2Button onClick={showModalOpc.bind(this, 'T0T1T2')}>
+      <T2Button onClick={showModalOpc.bind(this, 'Temporizadores')}>
         T2
       </T2Button>
-      
 
-      <ADConverter onClick={showModalOpc.bind(this, 'conversorA/D')} >Conversor A/D</ADConverter>
-      <Vref>Vref</Vref>
+      <ADConverter onClick={showModalOpc.bind(this, 'Conversor A/D')}>
+        Conversor A/D
+      </ADConverter>
+      <Vref onClick={showModalOpc.bind(this, 'Vref')}>Vref</Vref>
       <PortButtonContainer>
-        <PortButton onClick={showModalOpc.bind(this, 'PortasABCDE')}>Porta A</PortButton>
-        <PortButton onClick={showModalOpc.bind(this, 'PortasABCDE')}>Porta B</PortButton>
-        <PortButton onClick={showModalOpc.bind(this, 'PortasABCDE')}>Porta C</PortButton>
-        <PortButton onClick={showModalOpc.bind(this, 'PortasABCDE')}>Porta D</PortButton>
-        <PortButton onClick={showModalOpc.bind(this, 'PortasABCDE')}>Porta E</PortButton>
+        <PortButton onClick={showModalOpc.bind(this, 'Portas')}>
+          Porta A
+        </PortButton>
+        <PortButton onClick={showModalOpc.bind(this, 'Portas')}>
+          Porta B
+        </PortButton>
+        <PortButton onClick={showModalOpc.bind(this, 'Portas')}>
+          Porta C
+        </PortButton>
+        <PortButton onClick={showModalOpc.bind(this, 'Portas')}>
+          Porta D
+        </PortButton>
+        <PortButton onClick={showModalOpc.bind(this, 'Portas')}>
+          Porta E
+        </PortButton>
       </PortButtonContainer>
-      <CCPButton onClick={showModalOpc.bind(this, 'CPP1CPP2')} >CPP1, CPP2</CCPButton>
+      <CCPButton onClick={showModalOpc.bind(this, 'CPP')}>CPP1, CPP2</CCPButton>
       <PWMButton onClick={showModalOpc.bind(this, 'PWM')}>PWM</PWMButton>
-      
-      <CPUButton onClick={showModalOpc.bind(this, 'Cpu')}>
-        CPU
-      </CPUButton>
 
-      <RAMButton onClick={showModalOpc.bind(this, 'MemoriaRAM')}>
+      <CPUButton onClick={showModalOpc.bind(this, 'CPU')}>CPU</CPUButton>
+
+      <RAMButton onClick={showModalOpc.bind(this, 'Memória RAM')}>
         RAM
       </RAMButton>
 
-      <ProgramMemoryButton onClick={showModalOpc.bind(this, 'MemoriaPrograma')}>
+      <ProgramMemoryButton onClick={showModalOpc.bind(this, 'Memória ROM')}>
         Memória Programável
       </ProgramMemoryButton>
-      
-      <EEPROMButton onClick={showModalOpc.bind(this, 'MemoriaEEPROM')}>
+
+      <EEPROMButton onClick={showModalOpc.bind(this, 'Memória EEPROM')}>
         EEPROM
       </EEPROMButton>
-      
+
       <InterruputsButton onClick={showModalOpc.bind(this, 'Watchdog')}>
         Watchdog
       </InterruputsButton>
-      
+
       <ResetButton onClick={showModalOpc.bind(this, 'Reset')}>
         RESETAR
       </ResetButton>
 
-      <PowerSupplyButton onClick={showModalOpc.bind(this, 'Alimentacao')}>
+      <PowerSupplyButton onClick={showModalOpc.bind(this, 'Fonte de Energia')}>
         FONTE DE ENERGIA
         <br />2 - 5.5V
       </PowerSupplyButton>

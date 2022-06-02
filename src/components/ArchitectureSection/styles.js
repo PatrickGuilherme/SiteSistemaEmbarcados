@@ -14,6 +14,7 @@ const Button = styled.button`
   font-weight: bold;
   border: none;
   font-size: 0.9rem;
+  border-radius: 5px;
 
   box-shadow: 2px 2px 0 #1a4516, 3px 3px 0 #1a4516, 4px 4px 0 #1a4516,
     5px 5px 0 #1a4516;

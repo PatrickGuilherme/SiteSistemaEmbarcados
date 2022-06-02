@@ -10,6 +10,7 @@ export const YearBox = styled.div`
   width: 25%;
   :hover {
     background-color: #eee;
+    cursor: pointer;
   }
 `
 
