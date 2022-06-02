@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  max-width: 1280px;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* max-width: 1280px; */
   margin-bottom: 2rem;
 `;
 
@@ -106,7 +106,7 @@ export const Vref = styled(Button)`
 
 export const PortButtonContainer = styled.div`
   position: absolute;
-  bottom: 40px;
+  top: 450px;
   left: 22px;
 `;
 

@@ -6,7 +6,6 @@ import {
   Header,
   IntroductionConcept,
   IntroductionSection,
-  ArchitectureSection,
 } from './styles';
 
 import HeaderTitle from './components/HeaderTitle';
@@ -22,7 +21,7 @@ import EmbeddedIllustration from './assets/embedded-illustration.png';
 import FeaturesButton from './components/FeaturesButton';
 import { BsSearch } from 'react-icons/bs';
 import Modal from './components/BaseModal';
-import ArchitectureTabs from './components/ArchitectureTabs';
+import ArchitectureSection from './components/ArchitectureSection';
 
 export default function App() {
   const [showFeaturesModal, setShowFeaturesModal] = useState(false);
@@ -170,9 +169,7 @@ export default function App() {
 
         <TimelineSection />
 
-        <ArchitectureSection>
-          <ArchitectureTabs />
-        </ArchitectureSection>
+        <ArchitectureSection />
 
         <ApplicabilitySection>
           <ApplicabilityTitle>Aplicações</ApplicabilityTitle>
@@ -233,7 +230,7 @@ export default function App() {
                       <p
                         style={{
                           color: mercado.color,
-                          fontSize: 30,
+                          fontSize: '150%',
                           fontWeight: 'bold',
                           pointerEvents: 'none',
                           width: '80%',

@@ -12,6 +12,7 @@ export const IntroductionSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
   padding: 2.5rem;
 `;
@@ -29,9 +30,4 @@ export const ApplicabilityTitle = styled.h1`
   background: #008042;
   color: #fff;
   padding: 1.6rem 0;
-`;
-
-export const ArchitectureSection = styled.div`
-  display: flex;
-  justify-content: center;
 `;

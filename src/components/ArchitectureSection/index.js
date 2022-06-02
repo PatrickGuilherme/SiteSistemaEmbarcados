@@ -4,10 +4,14 @@ import ArchitectureButtons from './ArchitectureButtons';
 import { Container } from './styles';
 import YoutubeIcon from '../../assets/youtube-icon.png';
 
-function ArchitectureTabs() {
+function ArchitectureSection() {
   return (
     <Container>
-      <div>
+      <div
+        style={{
+          position: 'relative',
+        }}
+      >
         <img
           src={EmbeddedArchitecture}
           alt='Embedded System Architecture'
@@ -20,7 +24,7 @@ function ArchitectureTabs() {
         />
         <ArchitectureButtons />
       </div>
-      <div style={{ marginLeft: '2%' }}>
+      <div style={{ maxWidth: 600, marginTop: 20, marginLeft: 20 }}>
         <h1 style={{ fontSize: 30 }}>ARQUITETURA E MICROCONTROLADORES</h1>
         <p
           style={{
@@ -57,4 +61,4 @@ function ArchitectureTabs() {
   );
 }
 
-export default ArchitectureTabs;
+export default ArchitectureSection;
