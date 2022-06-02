@@ -4,9 +4,8 @@ import ArchitectureButtons from './ArchitectureButtons';
 import { Container } from './styles';
 
 function ArchitectureTabs() {
-  return <Container style={{padding: '0.3%'}}>
-    <div style={{display:'flex', flexDirection: 'row', marginBottom: '1%'}}>
-      <div style={{alignContent: 'flex-start'}}>
+  return <Container>
+      <div>
         <img src={EmbeddedArchitecture} alt='Embedded System Architecture' />
         <ArchitectureButtons />    
       </div>    
@@ -25,7 +24,6 @@ function ArchitectureTabs() {
           </a>
         </div>
       </div>    
-    </div>
   </Container>;
 }
 

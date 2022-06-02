@@ -134,12 +134,11 @@ export default function App() {
             {swiperContents.map((swiper, index) => {
               return (
                 <SwiperSlide key={index} >
-                  <div style={{textAlign: 'center'}}>
+                  <div style={{textAlign: 'center', padding: 30}}>
                     <h1>{swiper.title}</h1>
                     <h4>{swiper.subtitle}</h4>
-                    <img src={swiper.img} width="35%"/>
+                    <img src={swiper.img} alt={swiper.title} />
                   </div>
-          
                 </SwiperSlide>
               );
             })}

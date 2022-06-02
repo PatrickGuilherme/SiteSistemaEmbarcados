@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin-bottom: 2rem;
 `;
 
 const Button = styled.button`
@@ -20,6 +24,7 @@ const Button = styled.button`
     box-shadow: 1px 1px 0 #1a4516, 2px 2px 0 #1a4516;
     margin-top: 2px;
     margin-left: 2px;
+    cursor: pointer;
   }
 `;
 
