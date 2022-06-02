@@ -57,7 +57,7 @@ function ArchitectureButtons() {
 
       <InternalOscillatorButton onClick={showModalOpc.bind(this, 'Oscilador')}>Oscilador Interno</InternalOscillatorButton>
       <SPIButton onClick={showModalOpc.bind(this, 'SPII2C')}>SPI I²C</SPIButton>
-      <USARTButton>USART</USARTButton>
+      <USARTButton onClick={showModalOpc.bind(this, 'USART')}>USART</USARTButton>
 
 
       <T0Button onClick={showModalOpc.bind(this, 'T0T1T2')}>
