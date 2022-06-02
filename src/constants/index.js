@@ -190,12 +190,12 @@ export const componentsBtn = [
   },
   {
     opc: 'CPP1CPP2',
-    text: '',
+    text: 'O módulo CCP ( Capture/Compare/PWM ) é um periférico que permite medir e controlar diferentes eventos. O modo de captura fornece acesso ao estado atual de um registro que está constantemente mudando seu valor. Neste caso, é o registro do temporizador Timer1. O modo de comparação compara constantemente valores de dois registros. Um deles é o registro do temporizador Timer1',
     text2: ''
   },
   {
     opc: 'SFR',
-    text: '',
+    text: 'O SFR (Special Function Registers) é um registrador "especial" que servem exatamente para guardar a configuração e o estado atual da máquina.',
     text2: ''
   }
 ];
