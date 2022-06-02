@@ -110,4 +110,47 @@ export const mercado = [
     color:'#000',
     img: imagemProf,
   },
-]
+];
+
+export const componentsBtn = [
+  {
+    opc: 'Alimentacao',
+    text: 'Os microcontroladores conseguem trabalhar em uma faixa de tensão de alguns volts, sendo comum os microcontroladores de 8 bits com 3,3V ou 5V.',
+  },
+  {
+    opc: 'Reset',
+    text: 'O microcontrolador possui um pino que serve para reiniciá-lo a partir de um sinal de tensão que é aplicado no pino. Reiniciar nada mais é do que fazer o programa interno do microcontrolador voltar ao início. Este pino pode receber o nome de RESET ou de Master Clear (MCLR).',
+  },
+  {
+    opc: 'Cpu',
+    text: 'É o “cérebro” do microcontrolador que processa as instruções contidas no progrma, sendo divididotento uma unidade de controle, unidade executa conjuntos de instruções.'
+  },
+  {
+    opc: 'Watchdog',
+    text: 'É um circuito interno de monitoramento (cão de guarda). Este circuito consiste em um temporizador, que intencionalmente provoca um RESET no microcontrolador. A ideia deste circuito é que, se o programa, por algum motivo, ficar travado, o Watchdog agirá e tirará o microcontrolador da situação de erro.'
+  },
+  {
+    opc: 'MemoriaRAM',
+    text: 'Nos microcontroladores é comum encontrar estes 3 tipos de memória uma delas é a  memória de dados, sendo a RAM e registradores da CPU.'
+  },
+  {
+    opc: 'MemoriaEEPROM',
+    text: 'Memória para o programa armazenar qualquer tipo de dado que precise ser retido. Ex: dados de configurações do programa.'
+  },
+  {
+    opc: 'MemoriaPrograma',
+    text: 'É comum de ser empregada a memória flash. Costuma ser consideravelmente maior (em armazenamento) que a memória RAM.'
+  },
+  {
+    opc: 'Oscilador',
+    text: 'O oscilador é o circuito que gera o clock do microcontrolador. Ele pode ser interno (normalmente um circuito RC) ou externo (normalmente um circuito com cristal).'
+  },
+  {
+    opc: 'GPIO',
+    text: 'É o periférico dos pinos de propósito geral (entradas e saídas digitais), sendo o mais comum dos microcontroladores. Este periférico é o responsável pela CPU conseguir, por exemplo, acionar um LED ligado à um pino do microcontrolador'
+  },
+  {
+    opc: 'Timens',
+    text: 'Os microcontroladores possuem circuitos de timers. Estes timers podem ser utilizados pelo programa para criar contadores e temporizadores que rodam no hardware e deixam o programa livre para executar outras tarefas em paralelo.'
+  },
+];
