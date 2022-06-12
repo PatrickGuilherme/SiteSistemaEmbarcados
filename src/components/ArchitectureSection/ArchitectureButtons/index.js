@@ -49,7 +49,7 @@ function ArchitectureButtons() {
         title={modalTitle}
         height={'35%'}
       >
-        <div>
+        <div style={{textAlign:'justify'}}>
           &emsp;&emsp;&emsp;{modalDescription[0]}
           <br />
           <br />
@@ -58,7 +58,7 @@ function ArchitectureButtons() {
       </Modal>
 
       <OscillatorButton onClick={showModalOpc.bind(this, 'Oscilador')}>
-        Oscilador 0 - 20MHz
+        Oscilador Externo
       </OscillatorButton>
       <SFRButton onClick={showModalOpc.bind(this, 'SFR')}>SFR</SFRButton>
 
@@ -85,7 +85,7 @@ function ArchitectureButtons() {
       <ADConverter onClick={showModalOpc.bind(this, 'Conversor A/D')}>
         Conversor A/D
       </ADConverter>
-      <Vref onClick={showModalOpc.bind(this, 'Vref')}>Vref</Vref>
+      <Vref onClick={showModalOpc.bind(this, 'VREF')}>Vref</Vref>
       <PortButtonContainer>
         <PortButton onClick={showModalOpc.bind(this, 'Portas')}>
           Porta A
@@ -103,20 +103,20 @@ function ArchitectureButtons() {
           Porta E
         </PortButton>
       </PortButtonContainer>
-      <CCPButton onClick={showModalOpc.bind(this, 'CPP')}>CPP1, CPP2</CCPButton>
+      <CCPButton onClick={showModalOpc.bind(this, 'CPP')}>CPP</CCPButton>
       <PWMButton onClick={showModalOpc.bind(this, 'PWM')}>PWM</PWMButton>
 
       <CPUButton onClick={showModalOpc.bind(this, 'CPU')}>CPU</CPUButton>
 
       <RAMButton onClick={showModalOpc.bind(this, 'Memória RAM')}>
-        RAM
+        Memória RAM
       </RAMButton>
 
-      <ProgramMemoryButton onClick={showModalOpc.bind(this, 'Memória ROM')}>
-        Memória Programável
+      <ProgramMemoryButton onClick={showModalOpc.bind(this, 'Memória de Programa')}>
+        Memória de Programa
       </ProgramMemoryButton>
 
-      <EEPROMButton onClick={showModalOpc.bind(this, 'Memória EEPROM')}>
+      <EEPROMButton onClick={showModalOpc.bind(this, 'Memória de Dados')}>
         EEPROM
       </EEPROMButton>
 
@@ -125,12 +125,12 @@ function ArchitectureButtons() {
       </InterruputsButton>
 
       <ResetButton onClick={showModalOpc.bind(this, 'Reset')}>
-        RESETAR
+        Reset
       </ResetButton>
 
       <PowerSupplyButton onClick={showModalOpc.bind(this, 'Fonte de Energia')}>
-        FONTE DE ENERGIA
-        <br />2 - 5.5V
+        Fonte de Energia
+        <br />
       </PowerSupplyButton>
     </>
   );

@@ -120,8 +120,8 @@ export const componentsBtn = [
   },
   {
     opc: 'Reset',
-    text: 'O microcontrolador possui um pino que serve para reiniciá-lo a partir de um sinal de tensão que é aplicado no pino. Reiniciar nada mais é do que fazer o programa interno do microcontrolador voltar ao início. Este pino pode receber o nome de RESET ou de Master Clear (MCLR).',
-    text2: ''
+    text: 'O reset ou Master Clear é um pino que é utilizado nos microcontroladores para retornar estes a um estado conhecido, ou seja, retornar seu funcionamento ao normal em que seus registros têm valores iniciais pré-definidos.',
+    text2: 'O reset é usado quando o microcontrolador não se comporta da maneira esperada, mas também pode ser utilizado quando ocorre uma interrupção por parte de outro dispositivo conectado ao microcontrolador. As formas de gerar um reset são várias, podendo ser quando se liga a alimentação, a nível de instrução logica e quando o watchdog é acionado.'
   },
   {
     opc: 'CPU',
@@ -130,72 +130,72 @@ export const componentsBtn = [
   },
   {
     opc: 'Watchdog',
-    text: 'É um circuito interno de monitoramento (tanto é que chama “cão de guarda”). Este circuito consiste em um temporizador, que intencionalmente provoca um RESET no microcontrolador. Portanto, para que o microcontrolador funcione corretamente, o programa deve ficar reiniciando constantemente o Watchdog para evitar o reinicio.',
-    text2: 'A ideia deste circuito é que, se o programa, por algum motivo, ficar travado, o Watchdog agirá e tirará o microcontrolador da situação de erro. O uso do Watchdog não é obrigatório e, em muitos casos, ele é desabilitado por padrão.'
+    text: 'É um circuito interno de monitoramento (denominado “cão de guarda”). Este circuito consiste em um temporizador, que intencionalmente provoca um RESET no microcontrolador.',
+    text2: 'A ideia deste circuito é que, se o programa, por algum motivo, ficar travado, o Watchdog agirá e tirará o microcontrolador da situação de erro.'
   },
   {
     opc: 'Memória RAM',
-    text: 'A memória RAM é uma memória de leitura e escrita, isto é, que pode ser gravada com um determinado valor e este valor pode ser posteriormente lido. Além disso, podemos acessar qualquer registrador desejado aleatoriamente para ler ou escrever uma palavra.',
-    text2: 'A memória RAM comum necessita de alimentação elétrica para manter a integridade de seus dados. É por este motivo, pertencente ao grupo de memórias voláteis.'
+    text: 'Memória de dados usada por um programa, durante a sua execução. Na RAM, são guardados todos os resultados intermediários ou dados temporários durante a execução do programa e que não são necessários serem mantidos após a sua execução.',
+    text2: 'A memória RAM necessita de alimentação elétrica para manter a integridade de seus dados. É por este motivo, pertencente ao grupo de memórias voláteis.'
   },
   {
-    opc: 'Memória EEPROM',
-    text: 'A EEPROM (Electrically Erasable Programmable Read-Only Memory) é uma memoria destinada apenas a leitura como seu nome sugere, sendo uma evolução do EPROM a EEPROM tem a capacidade de apagar e reescrever seus dados via eletricidade, não sendo necessário remover ela do circuito para ser limpa ou reprogramada. Ela nem sempre está presente nos microcontroladores.',
-    text2: ''
+    opc: 'Memória de Dados',
+    text: 'A memória EEPROM é usada para guardar dados importantes ou alguns parâmetros de processamento. A característica mais importante desta memória é não perder o seu conteúdo quando a fonte de energia é desligada. Sem alimentação, estes dados permanecem no microcontrolador durante mais de 40 anos (microcontrolador PIC16F84)',
+    text2: 'Sendo uma evolução da EPROM, a EEPROM tem a capacidade de apagar e reescrever seus dados via eletricidade, não sendo necessário removê-la do circuito para ser limpa ou reprogramada.'
   },
   {
-    opc: 'Memória ROM',
-    text: 'Uma memória ROM (Read Only Memory) é um tipo de memória no qual podemos ler, mas não escrever, tendo os conteúdos fixos e inalterados. Existem circuitos de ROM que permitem que o usuário estabeleça as informações que serão armazenadas, ao invés do fabricante. Estas memórias são chamadas de memórias PROM (Memórias de leitura programáveis). Normalmente a gravação é feita através da queima de elos fusíveis que determinam se a posição de memória conterá “um” ou “zero”.',
+    opc: 'Memória de Programa',
+    text: 'A memória de programa é implementada usando tecnologia FLASH, o que torna possível programar o microcontrolador muitas vezes antes de este ser instalado num dispositivo, e, mesmo depois da sua instalação, pode-se alterar o programa e parâmetros contidos. O tamanho da memória de programa é de 1024 endereços de palavras de 14 bits, destes, os endereços zero e quatro estão reservados respectivamente para o reset e para o vetor de interrupção.',
     text2: ''
   },
   {
     opc: 'Oscilador',
-    text: 'Os microcontroladores necessitam de uma fonte de clock para que possam processar informações, sendo a velocidade de processamento proporcional à frequência fornecida pela fonte de clock. Neste contexto há os osciladores, circuito que gera o clock do microcontrolador podendo ser interno (normalmente um circuito RC) ou externo (normalmente um circuito com cristal).',
-    text2: ''
+    text: 'Um oscilador é um circuito que converte a corrente contínua em alternada constituído por um elemento passivo responsável pela frequência de oscilação e um elemento ativo que fornece a energia necessária para compensar o amortecimento do sinal, devido à resistência elétrica do circuito.',
+    text2: 'Na eletrônica os microcontroladores necessitam de uma fonte de clock, esta fonte é o circuito do oscilador, este pode ser [INTERNO] sendo calibrado pelo fabricante, sendo mais otimizado no consumo de energia e com precisão razoável, ou o oscilador pode ser [EXTERNO] aplicado em casos onde precisão é fundamental e necessita-se de altos valores de frequência de clock.'
   },
   {
     opc: 'Temporizadores',
-    text: 'Os microcontroladores possuem circuitos de timers. Estes timers podem ser utilizados pelo programa para criar contadores e temporizadores que rodam no hardware e deixam o programa livre para executar outras tarefas em paralelo.',
-    text2: ''
+    text: 'Os microcontroladores possuem unidades de temporização. Estes podem ser utilizados pelo programa para criar contadores e temporizadores que rodam no hardware e deixam o programa livre para executar outras tarefas em paralelo.',
+    text2: 'A unidade de temporização gera sinais em intervalos de tempos regulares e com isso pode-se criar os contatores e temporizadores.'
   },
   {
     opc: 'Portas',
-    text: 'O GPIO é um periférico responsável por controlar os pinos de entrada e saída digital do microcontrolador. Isto significa que ele é capaz de: definir se um pino é saída ou entrada, Se o pino for saída, então ele pode controlar o estado do pino (0 ou 1), se o pino for entrada, ele pode ler o estado do pino (0 ou 1) entre outros detalhes.',
-    text2: 'Com estas configurações, é possível fazer o microcontrolador ler e controlar ‘elementos’ que estão externos ao seu circuito. Por exemplo, o microcontrolador pode acionar LEDs, controlar motores (com a ajuda de um circuito de potência), ler botões ou ler determinados sensores.'
+    text: 'As portas são um grupo de pinos existentes no microcontrolador representando a conexão física da CPU com o mundo exterior, podendo ser empregados para observar ou comandar dispositivos ou componentes. Por exemplo, acionar LEDs, controlar motores, ler botões ou ler determinados sensores.',
+    text2: 'As portas podem ser acionadas simultaneamente, pode-se colocar uma combinação de zeros e uns ou ler um estado existente, estes pinos podem ser definidos como entrada ou saída, de acordo com as necessidades do projeto a partir da escrita no seu registro chamado TRIS sendo que cada pino tem uma letra associada.'
   },
   {
     opc:'Conversor A/D',
-    text: 'Para realizar a interface com o sistema exterior (processo), os controladores estão dotados de sistemas de aquisição e conversão de sinais, um deles é o conversor A/D (Conversor Analógico para Digital) este desempenha o papel de converter o sinal analógico de entrada para um sinal digital, o que permite o seu processamento no domínio digital como um vetor de n bits.',
+    text: 'Como os sinais dos periféricos são diferentes daqueles que o microcontrolador pode processar (zero e um), eles devem ser convertidos num formato que possa ser compreendido pelo microcontrolador. Este é o conversor Analógico para Digital que desempenha o papel de converter o sinal analógico de entrada para um sinal digital, o que permite o seu processamento no domínio digital como um vetor de n bits.',
     text2: ''
   },
   {
     opc: 'PWM',
-    text: 'A sigla PWM (Pulse Width Modulation) significa Modulação por Largura de Pulso. A técnica PWM consegue substituir outras técnicas de controle de potência, como a modulação por frequência (FM). A técnica PWM também pode ser utilizada no controle de velocidade dos motores, controle de luminosidade, controle de servo motores e em outras aplicações.',
+    text: 'O PWM (Pulse-width modulation ou modulação por largura de pulso) é utilizada para permitir o controle da energia fornecida a equipamentos elétricos, como servomotores e dispositivos de iluminação. Também pode ser usada para codificar mensagens para transmissão.',
     text2: ''
   },
   {
     opc: 'USART',
-    text: 'O USART é um módulo de comunicação que utiliza sinais de dados e relógio para seu funcionamento sendo empregado para transmitir e receber dados de forma serial, de maneira síncrona ou assíncrona atuando como um receptor e transmissor universal.',
-    text2: ''
+    text: 'USART (Transmissor e Receptor Universal Síncrono e Assíncrono) é um módulo de comunicação (periférico) que é utilizada para transmitir e receber dados de forma serial (envia e recebe toda a informação sequencialmente), de maneira síncrona ou assíncrona. Conectando dispositivos como bluetooth, GPS, RFID entre outros.',
+    text2: 'A comunicação síncrona descreve que cada bit ou conjunto de bits enviados depende de um pulso de clock e requer um fio específico para o clock, já a comunicação assíncrona não requer o sinal de clock e requer que os dispositivos em comunicação tenham a mesma taxa de recepção/envio. Tanto na assíncrona como síncrona existe um fio que é usado para transmitir dados e outro para receber dados.'
   },
   {
     opc: 'SPI I²C',
-    text: 'Serial Peripheral Interface ou SPI é um protocolo de comunicação serial síncrona que fornece comunicação full-duplex em velocidades muito altas. Este é um protocolo do tipo mestre-escravo que fornece uma interface simples e de baixo custo entre um microcontrolador e seus periféricos.',
-    text2: 'O protocolo I2C descreve o funcionamento de um barramento de comunicação serial que utiliza apenas dois fios, inventado pela Philips no início da década de 90, este protocolo é muito utilizado para conectar periféricos de baixa velocidade a placas-mãe, microcontroladores e afins.'
+    text: 'O Serial Peripheral Interface ou SPI é um protocolo de comunicação serial síncrona que fornece comunicação full-duplex (dispositivo pode transmitir e receber dados ao mesmo tempo) em velocidades muito altas. Este é um protocolo que tem o comando centralizado em um dispositivo mestre que inicia a comunicação, enviando comandos e definindo a taxa de comunicação (mestre-escravo).',
+    text2: 'O I²C é um barramento de comunicação que utiliza geralmente dois canais de transmissão, um para transmitir e receber dados e outro para sincronização dos mesmos, sendo um tipo de comunicação síncrona, assim como a SPI. O I²C permite a comunicação entre diversos dispositivos com apenas dois fios. Sendo assim, podem existir diversos mestres ou escravos ligados no barramento.'
   },
   {
-    opc: 'Vref',
+    opc: 'VREF',
     text: 'Vref é a tensão de referência pela qual o ADC(Conversor A/D) calcula os valores digitais. Em muitos ADCs (Conversores A/D) a fonte de tensão do chip pode ser usada como sua tensão de referência, mas haveria ruído nos sinais e não seria consistente ou preciso.',
     text2: ''
   },
   {
     opc: 'CPP',
-    text: 'O módulo CCP ( Capture/Compare/PWM ) é um periférico que permite medir e controlar diferentes eventos. O modo de captura fornece acesso ao estado atual de um registro que está constantemente mudando seu valor. Neste caso, é o registro do temporizador Timer1. O modo de comparação compara constantemente valores de dois registros. Um deles é o registro do temporizador Timer1',
-    text2: ''
+    text: 'O módulo CCP é um periférico presente em microcontroladores que executa três processos, a captura, a comparação e a geração PWM. Um CPP nas funções de captura e comparação possui três blocos: um temporizador (Timer 1), um circuito lógico (captura/comparação) e registradores CCPRxH e o CCPRxL para armazenar o valor em um processo de captura ou comparação.',
+    text2: 'O modo captura pode determinar a largura de um pulso, período de um sinal ou a sua frequência, o modo de comparação compara os valores de um registrador Timer 1 e os CCPRs, quando tiver uma igualdade um evento de comparação é disparado, podendo gerar, a exemplo, uma interrupção do programa. O modo de PWM é capaz de executar a modulação por largura de pulso através de comparações com o registrador Timer 2. '
   },
   {
     opc: 'SFR',
-    text: 'O SFR (Special Function Registers) é um registrador "especial" que servem exatamente para guardar a configuração e o estado atual da máquina.',
+    text: 'O SFR (Special Function Registers) é um registrador "especial" que serve exatamente para guardar a configuração e o estado atual da máquina.',
     text2: ''
   }
 ];

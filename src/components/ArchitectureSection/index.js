@@ -25,7 +25,7 @@ function ArchitectureSection() {
         <ArchitectureButtons />
       </div>
       <div style={{ maxWidth: 600, marginTop: 20, marginLeft: 20 }}>
-        <h1 style={{ fontSize: 30 }}>ARQUITETURA E MICROCONTROLADORES</h1>
+        <h1 style={{ fontSize: 30 }}>MICROCONTROLADORES</h1>
         <p
           style={{
             textAlign: 'justify',
